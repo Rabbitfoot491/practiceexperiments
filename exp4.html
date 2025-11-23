@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div,
+    h1 {
+        
+        line-height: 40px;
+    }
+</style>
+
+<body align="center">
+    <h1>Hotel Room Booking Form</h1>
+    <form action="submit.php">
+        <div>
+            <label for="name">Full name:</label>
+            <input id="name" type="text" placeholder="" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="" required>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input id="phone" type="phone" placeholder="" required>
+        </div>
+
+        <div>
+            <label for="date">Check in date:</label>
+            <input id="date" type="date" placeholder="" required>
+        </div>
+
+        <div>
+            <label for="date">Check out date:</label>
+            <input id="date" type="date" placeholder="" required>
+        </div>
+        <div>
+            <label for="Room">Room Type:</label>
+            <select id="Room" required>
+                <option value="" disabled selected>Select room</option>
+                <option value="Single">Single Room</option>
+                <option value="Double">Double Room</option>
+            </select>
+        </div>
+        <div>
+            <label for="number">Number of guests:</label>
+            <input id="number" type="number" placeholder="" required>
+
+        </div>
+        <div>
+            <label for="requests">Special requests</label>
+        </div>
+        <div>
+            <textarea id="requests" placeholder="" rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit">Book now</button>
+            <button type="reset">Reset form</button>
+
+        </div>
+            
+
+    </form>
+</body>
+
+</html>

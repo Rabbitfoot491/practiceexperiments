@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div,h1{
+        line-height: 35px;
+    }
+</style>
+
+
+<body>
+    <h1 align="center">Student Registration Form</h1><hr>
+    <form action="submit.php">
+        <div>
+            <label for="name">Full name:</label>
+            <input id="name" type="text" placeholder="Enter your full name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter valid E-mail address" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" minlength="8" placeholder="Enter password" required>
+        </div>
+
+        <div>
+            Gender:
+            <input id="Male" type="radio" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input id="Female" type="radio" name="gender" value="Female">
+            <label for="Female">Female</label>
+            <input id="Other" type="radio" name="gender" value="Other">
+            <label for="Other">Other</label>
+        </div>
+        <div>
+            <label for="Course">Course:</label>
+            <select id="Course" required>
+                <option value="" disabled selected>Select course</option>
+                <option value="">Technology</option>
+                <option value="">Business and administration</option>
+            </select>
+        </div>
+        <div>
+            <label for="phone">Contact No:</label>
+            <input id="phone" type="phone" placeholder="Enter phone number" required>
+
+        </div>
+        <div>
+            <label for="Address">Address:</label>
+        </div>
+        <div>
+            <textarea id="Address" placeholder="Enter your address" rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+
+        </div>
+
+
+    </form><hr>
+    <p align="center">&copy; 2025 Student Registration Portal</p>
+</body>
+
+</html>
